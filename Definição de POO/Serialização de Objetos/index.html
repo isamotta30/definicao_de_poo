@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="Serialização de Objetos.css">
+
+  </style>
+  <title>Pilares Poo</title>
+
+        </head>
+        <body>
+        <center>
+            <main>
+              <section id="Bv">
+                <h1 align="center">Serialização de Objetos</h1>
+          <main>
+            <section id="rede">
+              <div class="rede">
+                <img src="./img/Serialização de Objetos.jpg"></img>
+
+              <p>A serialização é quando um objeto é transformado, em uma cadeia de bytes e desta forma pode ser manipulado de maneira mais fácil, seja através de transporte pela rede ou salvo no disco. Após a transmissão ou o armazenamento esta cadeia de bytes pode ser transformada novamente no objeto Java que o originou.</p>
+
+              <p>. Em suma, a ideia por trás da serialização é a de "congelar" o objeto, guardando-o por um tempo indeterminado, movê-lo e depois "descongelar" esse objeto tornando novamente utilizável. Cenários comuns para o uso da serialização de objetos dentro do Java, são as invocações remotas de métodos através de objetos distribuídos, aplicações que fazem uso do mapeamento objeto/relacional e servidores de aplicações quando um cliente está desatualizado em relação a versão dos jars necessários.</p>
+
+              <P>A serialização trabalha apenas com atributos de instância de uma classe, não incluindo os atributos estáticos. Outro detalhe importante da serialização é que se o objeto a ser serializado for proveniente de uma subclasse, todos os atributos de instancia, mesmos aqueles originários de superclasses, serão serializados. Também se um objeto contiver referências de outros objetos, todas as referências serão serializadas.</P>
+
+              <P>Para um objeto estar credenciado a passar pelo processo de serialização sua classe deve implementar a interface java.io.Serializable que sinalizará a máquina virtual Java (JVM) que objetos daquela classe estão aptos a serem serializadas. Caso não se deseje serializar algum atributo de instância específico de um determinado objeto, basta sinalizá-lo como transient, assim o objeto serializado não conterá a informação referente a este atributo.</P>
+
+              
+                <section class="button">
+                  <button><a href="./img/codigo.png" target="_blank">Código</a></button>
+                  <button><a href="file:///C:/Users/Isabela%20Motta%20Primo/Documents/FPOO/Defini%C3%A7%C3%A3o%20de%20POO/index.html#">Definições Poo</a></li>
+                </section>
+             
+
+          
+  </center>
+</body>
+
+</html>

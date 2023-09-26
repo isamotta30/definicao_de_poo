@@ -1,0 +1,91 @@
+<html>
+
+<head>
+
+ <link rel="stylesheet" type="text/css" href="styles.css">
+
+ </style>
+ <title>Relacionamentos de Objetos</title>
+
+ </head>
+ <body>
+ <center>
+ <main>
+ <section id="Bv">
+ <h1 align="center">Relacionamento de Objetos</h1>
+ <main>
+ <section id="rede">
+ <div class="rede">
+ <img src="./imagens/relacionamento_entre_obj_titulo.png"></img>
+
+ <p>O relacionamento entre objetos define como eles vão interagir ou colaborar para executar uma operação em uma aplicação. Em qualquer aplicação, objetos de classes de interface do usuário vão interagir com objetos da camada de negócios para executar uma operação. Além disso, os objetos da camada de negócios podem interagir com objetos de um repositório que por sua vez se comunica com algum objeto da fonte de dados ou com algum objeto de serviço.</p>
+
+ <p>Os tipos básicos de relacionamentos definidos na programação orientada a objetos são:</p>
+<p>1-Associação</p>
+<p>2-Colaboração</p>
+<p>3-Agregação</p>
+<p>4-Composição</p>
+<p>5-Herança</p>
+
+<p>1 - Associação</p>
+  <P> A associação descreve um vínculo que ocorre entre classes, sendo que a mais comum é a  associação binária, mas é possível que uma classe esteja vinculada a si própria, e ai temos a associação unária; outro cenário é onde temos uma associação que seja compartilhada por mais de uma classe, o que conhecemos por associação ternária ou N-ária, sendo este tipo de associação a mais rara e também mais complexa.</p>
+   
+ <section class="button">
+   <button><a href="./imagens/print_relacionamento_objetos.png" target="_blank">Associação</a></button>
+   </section>
+
+   <p>2 - Colaboração</p>
+   <p>O relacionamento de colaboração é muitas vezes conhecido como relacionamento 'usa um' ou 'uses a'.  A colaboração declara que dois objetos estão colaborando quando um objeto faz uso de outro objeto para completar uma operação.</p>
+   <P>Nesse exemplo, para salvar e recuperar os detalhes do cliente, a classe ClienteRepository usa um objeto Cliente para salvar e recuperar os dados. Da mesma forma outras classes de repositório como ProdutoRepository e PedidoRepository usam objetos Produto e Pedido respectivamente, e, portanto, estão colaborando para executar uma operação.</P>
+   <section class="button">
+      <button><a href="./imagens/Colaboracao1.png" target="_blank">Colaboração</a></button>
+      </section>
+
+   <p>3 - Agregação</p>
+   <P>Esse relacionamento é um tipo especial de associação onde as informações de um objeto (chamado objeto-todo) precisam ser complementados pelas informações contidas em um ou mais objetos de outra classe (chamados objetos-parte); temos então o que conhecemos como todo/parte.  A agregação um tipo composição que representa um vínculo fraco entre duas classes.</P>
+   <P>O relacionamento de agregação as vezes é referido como relacionamento "tem um" ou 'has a'.</P>
+   <p>Neste tipo de relacionamento, um objeto pode ser composto de um ou mais objetos na forma de suas propriedades. Assim temos que :</p>
+   <P>- Todo Cliente tem um endereço para o qual o produto solicitado será enviado </P>
+   <P> - Cada Pedido tem um cliente, um endereço de envio e um produto representado como um PedidoItem </P>   
+   <P> Podemos então concluir que nosso objeto da classe Pedido é composto pelos objetos Cliente, Endereco e PedidoItem. </P>   
+   <P>O objeto PedidoItem é ainda composto pelo objeto Produto e a classe Pedido compõe esses objetos com suas propriedades.</P>
+   <section class="button">
+      <button><a href="./imagens/agregacao.png" target="_blank">Agregação</a></button>
+      </section>
+
+<p>4 - Composição </p>
+<p> O relacionamento Composição, representa um vínculo forte entre duas classes, e é também um relacionamento caracterizado como parte/todo, mas, neste caso, o todo é responsável pelo ciclo de vida da parte. Assim a existência do Objeto-Parte NÃO faz sentido se o Objeto-Todo não existir. </p>
+<p> No nosso exemplo o objeto da classe Pedido é composto por um Cliente e um PedidoItem.  Se rompermos o relacionamento entre as classes Pedido e Cliente, a classe Cliente ainda vai poder existir, mas se a relação entre a classe Pedido e a classe PedidoItem for quebrada, a classe PedidoItem não pode existir. Um pedido é composto por um ou vários itens. </p>
+<p>Suponha que a funcionalidade do nosso aplicativo mude no futuro e, em vez de aceitar pedidos de produtos, agora oferece alguns outros serviços aos clientes existentes, digamos um serviço de mensagens. Nesse cenário, a classe Pedido não servirá para nada. No entanto, a classe Cliente que já foi composta pela classe Pedido ainda pode existir sem ela, já a classe PedidoItem não pode.</p>
+<section class="button">
+   <button><a href="./imagens/composicao.png" target="_blank">Composição</a></button>
+   </section>
+
+   <P>5 - Herança
+      <P>A herança às vezes é referida como um relacionamento "é um" ou 'is a'. Neste tipo de relacionamento, uma classe herda os membros de outra classe. A classe herdada é conhecida como a classe base, enquanto a classe herdada é conhecida como a classe derivada. Como a classe derivada tem os membros da classe base, pode-se dizer que a classe derivada é um subtipo da classe base. A classe derivada pode ou não ter membros diferentes dos herdados.</P>
+      
+      <P>Suponha que nosso aplicativo esteja funcionando bem no mercado. Ao ver isso, o proprietário do produto agora quer adicionar um novo recurso no aplicativo que monitoraria o tipo de produtos com alta demanda.</P>
+     <p> A partir do novo requisito, é bastante claro que teremos de criar subtipos de nossa classe de produtos. Esses subtipos representarão as categorias de produtos especializados no mundo real.</P>
+      <section class="button">
+         <button><a href="./imagens/heranca.png" target="_blank">Herança</a></button>
+         </section>
+
+
+ <section class="button">
+ <button><a href="./imagens/print_relacionamento_objetos.png" target="_blank">Código</a></button>
+ <button><a href="file:///C:/Users/Isabela%20Motta%20Primo/Documents/FPOO/Defini%C3%A7%C3%A3o%20de%20POO/index.html#">Definições Poo</a></li>
+ </sectio>
+
+
+
+
+
+
+
+
+
+
+</center>
+</body>
+
+</html>

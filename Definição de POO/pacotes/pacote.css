@@ -1,0 +1,29 @@
+.cabecalho {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(238, 234, 241);
+    font-size: xx-large;
+}
+
+body {
+    background-color:	#4B0082;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.redes {
+    background-color: #D8BFD8;
+    color: rgb(0, 0, 0);
+    border: 4px solid #B0E0E6;
+    margin: 20px;
+    padding: 20px;
+}
+button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: #ffffff;
+  }
